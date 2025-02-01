@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "title1",
+        "price": 1099,
+        "discountPercentage": 11.83,
+        "rating": 4.54    
+    },
+    {
+        "id": 2,
+        "title": "title1",
+        "price": 1099,
+        "discountPercentage": 11.83,
+        "rating": 4.54    
+    },
+    {
+        "id": 3,
+        "title": "title1",
+        "price": 1099,
+        "discountPercentage": 11.83,
+        "rating": 4.54    
+    }
+]

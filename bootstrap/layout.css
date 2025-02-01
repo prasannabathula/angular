@@ -1,0 +1,17 @@
+.container{
+    background-color: gray;
+}
+
+.header,.footer{
+    background-color: orange;
+}
+
+.navbar {
+    background-color: palevioletred;
+}
+
+.navbar  ul li{
+   display: inline-block;
+   list-style-type: none; 
+   color: blue;
+}

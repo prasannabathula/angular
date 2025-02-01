@@ -1,0 +1,10 @@
+const osobj = require('os');
+//console.log(osobj);
+console.log("when we download any thing from browser it will ask like architecture like 32bit 64bit",osobj.arch());
+console.log("it will return os like linux windows etc",osobj.platform());
+console.log(osobj.hostname());
+console.log(osobj.cpus()[2]);
+console.log(osobj.freemem()/1024/1024/1024);
+let tmem = osobj.totalmem();
+console.log(`${tmem}`/1024/1024/1024);
+console.log(osobj.tmpdir());

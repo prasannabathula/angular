@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <div id="container">
+            <p>this is my first paragraph</p>
+            <p>this is my second paragraph</p>
+            <p>this is my third paragraph</p>
+        </div>
+        <script>
+            /* **************apend child  ***********/
+            const target = document.getElementById('container');
+            console.log(target);
+            const newElement = document.createElement('p');
+            const text = document.createTextNode('this is my fourth paragraph');
+            newElement.appendChild(text);
+            console.log(newElement);
+            target.appendChild(newElement)
+
+             /* **************insert before  ***********/
+             const child_in_target = document.getElementsByTagName('p')[1];
+            console.log(child_in_target);
+            const newElement2 = document.createElement('p');
+            const text2 = document.createTextNode('this is my fifth paragraph');
+            newElement2.appendChild(text2);
+            console.log(newElement2);
+            target.insertBefore(newElement2,child_in_target)
+
+
+        </script>
+    </body>
+</html>

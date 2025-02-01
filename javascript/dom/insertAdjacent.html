@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <div id="container">
+            <p>this is my first paragraph</p>
+            <p>this is my second paragraph</p>
+            <p>this is my third paragraph</p>
+        </div>
+        <script>
+      
+            const child_in_target3 = document.getElementsByTagName('p')[1];
+            console.log("******",child_in_target3);
+            const newElement3 = document.createElement('p');
+            const text3 = document.createTextNode('this is my fourth paragraph');
+            newElement3.appendChild(text3);
+            child_in_target3.insertAdjacentElement("afterbegin",newElement3)
+
+
+            const child_in_target2 = document.getElementsByTagName('p')[0];
+            console.log("******",child_in_target2);
+            const newElement2 = document.createElement('p');
+            const text2 = document.createTextNode('this is my before begin  paragraph');
+            newElement2.appendChild(text2);
+            child_in_target2.insertAdjacentElement("beforebegin",newElement2)
+
+
+        </script>
+    </body>
+</html>

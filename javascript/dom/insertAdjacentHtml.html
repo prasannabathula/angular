@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div id="container">
+            <p style="color:red;">this is my first paragraph</p>
+            <p style="color:red;">this is my second paragraph</p>
+            <p id="text" style="color:red;">dynamic data</p>
+        </div>
+        <script>
+      
+            const child_in_target2 = document.getElementsByTagName('p')[0];
+            child_in_target2.insertAdjacentHTML("beforebegin","<p>this is fourth paragraph</p>")
+            const child_in_target3 = document.getElementById('text');
+            child_in_target3.insertAdjacentHTML("beforebegin","this is fifth paragraph")
+
+        </script>
+    </body>
+</html>

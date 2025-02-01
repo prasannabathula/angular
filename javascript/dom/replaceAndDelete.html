@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <div id="container2">
+            <ul style="background-color: yellowgreen;">
+                <li>first</li>
+                <li>second</li>
+                <li>third</li>
+                <li>fourth</li>
+                <li id="replace">fifth</li>
+            </ul>
+        </div>
+        <script>
+            const target = document.getElementsByTagName('ul')[0];
+            const child_in_target = document.getElementsByTagName('li')[1];
+            const child_in_target4 = document.getElementsByTagName('li')[4];
+            const newElement2 = document.createElement('p');
+            const text2 = document.createTextNode('new element added');
+            newElement2.appendChild(text2);
+            console.log(child_in_target);
+            target.removeChild(child_in_target);
+            target.replaceChild(newElement2,child_in_target4);
+        </script>
+    </body>
+</html>

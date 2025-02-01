@@ -1,0 +1,36 @@
+<p>ng-container allows us to create a division or section in a template without introducing a new HTML element. The ng-container does not render in the DOM, but content inside it is rendered. ng-container is not a directive, component, class, or interface, but just a syntax element.</p>
+
+<div>
+    <h1>example 1</h1>
+    <ng-container>
+      <p>with out any condition</p>
+    </ng-container>
+</div>
+<br>
+
+<div>
+    <h1>It is a very useful directive. Especially when working with structural directives like ngIf, ngFor,</h1>
+   
+      <ul *ngFor="let item of items">
+        <li *ngIf="item.active">
+            {{item.name}}
+        </li>
+      </ul>
+      <ng-container *ngFor="let item of items">
+        <p *ngIf="item.active"> {{item.name}} </p>
+    </ng-container>
+    <ng-container *ngIf="items">
+        <div *ngFor="let item of items">
+          {{item.name}}
+        </div>
+    </ng-container>
+</div>
+
+<div>
+    The container is also used as a placeholder for injecting a dynamic template using the ngTemplateOutlet.
+    
+<ng-container *ngTemplateOutlet="loading"></ng-container>
+<ng-template #loadingf>
+    <p>dynamic embedded view</p>
+</ng-template>
+</div>

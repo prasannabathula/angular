@@ -1,0 +1,10 @@
+const pathObj = require('path');
+//console.log(pathObj);
+let path = "D:/practise/node/filesystem.js";
+let path2 = "node/filesystem.js";
+console.log(pathObj.parse(path));
+console.log(pathObj.dirname(path));
+console.log(pathObj.basename(path));
+console.log(pathObj.extname(path));
+console.log(pathObj.isAbsolute(path));
+console.log(pathObj.isAbsolute(path2));

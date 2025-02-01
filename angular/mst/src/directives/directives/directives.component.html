@@ -1,0 +1,27 @@
+<p>directives works!</p>
+
+<div appAttrSetbackground>
+    To set Background using attribute selector
+       
+</div>
+<div appRenderer2>
+    renderer2 --- To set Background using attribute selector       
+</div>
+<div appHostListener>
+    hostlistener --- on enter 1 colour and on leave apply other color
+</div>
+<div>
+    appHostBinding----accessing properties of DOM Object
+<button appHostBinding>save me</button>
+</div>
+<div appHostBindingListener>
+    hostlistener --- on enter 1 colour and on leave apply other color
+    appHostBinding----accessing properties of DOM Object
+</div>
+<div>
+    propert binding and host binding
+    <input type="text" value="hi"/><br/>
+    <input type="text" [value]="textInput"/><br/>
+    <input type="text" appHostBinding2/><br/>
+    <input type="text" [value]="textInput" appHostBinding2/><br/>
+</div>
